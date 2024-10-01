@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+        padding: 20px;
+}
+.body{
+        background-image: url(/src/component/mte22.PNG);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.message{
+        width: 50%;
 }
+
+.file {
+        position: absolute;
+        top: 81%;
+        left: 28.3%;
+        background-color: white;
+        border-radius: 100%;
+        height: 30%;
+        width: 220px;
+}
+
+.upload{
+                display: inline-flex;
+                margin-top: 20px;
+                width: 94%;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 1px 1px 1px 1px grey;
+                border-radius: 10px;
+
+}
+
+span{
+        width: 30%;
+}
+
+.choose{
+                position:relative;
+                width:20%; 
+                display:block; 
+                height: 10%;
+                padding: 10px 0 10px 30px;
+                box-sizing: border-box;
+                margin-left:70%;
+                cursor:pointer;
+                border: 1px solid blue;
+                border-radius:10px;
+                color:blue;
+}
+
+.choose:hover{
+        background-color: rgba(0, 0, 255, 0.2);
+}
+
+.custom {
+        margin-top: 18px; 
+        margin-left: 44px; 
+        margin-right: 24px; 
+        padding: 20px; 
+        width: 80%; 
+        border-radius: 12px; 
+        background: linear-gradient(to bottom, rgba(25, 138, 78, 0.57), rgba(0, 195, 254, 0.58));
+        color: white; 
+        cursor: pointer;
+    }
+    
+    h4{
+        font-size: small;
+        margin-top:-40px;
+        margin-left: 50px;
+    }
+
+    h4 p{
+                color: rgb(216, 208, 208);
+    }
+
+    .del{
+                position:absolute;
+                cursor: pointer;
+                margin-left:40%;
+                margin-top:-60px;
+                border:none;
+    }

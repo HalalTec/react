@@ -16,7 +16,6 @@ body{
 .file {
         margin-left:55.5%;
         margin-top: 63.5%;
-        background-color: red;
         border-radius: 100%;
         height: 170px;
         width: 170px;
@@ -80,7 +79,7 @@ span{
     .del{
                 position:absolute;
                 cursor: pointer;
-                margin-left:540px;
+                margin-left:500px;
                 margin-top:-60px;
                 border:none;
     }
@@ -90,7 +89,7 @@ span{
     
     @media (max-width: 1024px) {
         .message{
-                width: 100%;
+                width: 50%;
         }
         .body{
             
@@ -108,21 +107,59 @@ span{
                 margin-top: 10px;
         }
         .file {
-                margin-top: 375px;
+                margin-top: 410px;
                 left: 200px;
-                height: 185px;
-                width: 185px;
+                height: 140px;
+                width: 140px;
         }
 
         .del{
                
-                margin-left:550px;
+                margin-left:400px;
     }
     }
     
     
     
     @media (max-width: 768px) {
+        .message{
+                width: 50%;
+        }
+        .body{
+                background-image: url(/src/component/new.PNG);
+                background-position:center;
+                background-size:contain;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin-top:5px;
+                margin-bottom:5px;
+                
+        }
+
+        .choose{
+                width:30%; 
+                
+        }
+
+       
+        .file {
+                margin-top: 306px;
+                left: 205px;
+                height: 105px;
+                width: 105px;
+        }
+
+        .del{
+               
+                margin-left:240px;
+    }
+
+    }
+
+
+
+
+    @media (max-width: 320px) {
         .message{
                 width: 100%;
         }
@@ -132,8 +169,8 @@ span{
                 background-size:contain;
                 background-repeat: no-repeat;
                 height: 100vh;
-                margin-top:-120px;
-                margin-bottom:-120px;
+                margin-top:-50px;
+                margin-bottom:-100px;
                 
         }
 
@@ -142,19 +179,17 @@ span{
                 
         }
 
-        .upload{
-                margin-top: 10px;
-        }
+       
         .file {
-                margin-top: 360px;
-                left: 204px;
-                height: 95px;
-                width: 95px;
+                margin-top: 300px;
+                left: 205px;
+                height: 77px;
+                width: 77px;
         }
 
         .del{
                
-                margin-left:240px;
+                margin-left:200px;
     }
 
     }

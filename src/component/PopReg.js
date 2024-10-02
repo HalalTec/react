@@ -1,13 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import img from './mte2.PNG'
 import upload from './upload.PNG'
 import success from './success.PNG'
 import del from './delete.PNG' 
+import html2canvas from "html2canvas";
+import React from "react";
 
 let val='';
 
 const PopReg = () => {
 
+    const ToCaptureRef = React.useRef()
     
     const [file, setFile] = useState();
     const [imageUrl, setImageUrl] = useState('');
@@ -35,12 +38,21 @@ const PopReg = () => {
     
     const download = () => {
         if (file) {
+          var canvasPromise = html2canvas(ToCaptureRef.current, {
+            useCORS: true
+          });
+          canvasPromise.then((canvas)=> {
+            var dataURL = canvas.toDataURL("image/png");
+            var img = new Image();
+            img.src = dataURL;
+            img.download = dataURL;
           const link = document.createElement('a');
-          link.href = imageUrl;
-          link.download = val.name;
+          link.href = img.src;
+          link.download = img.download;
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
+        })
           setComplete({display:"block"})
           setCheck({display: "none"})
           setRestart({display:"block"})
@@ -81,7 +93,7 @@ const PopReg = () => {
             </p>
             Upload your preferred image, downlaod and share with your loved ones.
 
-               <div className="body">
+               <div className="body" ref={ToCaptureRef}>
                      <img src={file} className="file"/>
               </div>
               <div className="upload" style={start}>

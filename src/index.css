@@ -2,7 +2,7 @@ body{
         padding: 20px;
 }
 .body{
-        background-image: url(/src/component/mte22.PNG);
+        background-image: url(/src/component/new.PNG);
         background-position:center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,17 +11,17 @@ body{
 }
 
 .message{
-        width: 50%;
+        width: 45%;
 }
 
 .file {
         position: absolute;
-        top: 81%;
-        left: 28.3%;
+        margin-top: 420px;
+        left: 393px;
         background-color: white;
         border-radius: 100%;
-        height: 30%;
-        width: 220px;
+        height: 210px;
+        width: 210px;
 }
 
 .upload{
@@ -82,7 +82,129 @@ span{
     .del{
                 position:absolute;
                 cursor: pointer;
-                margin-left:40%;
+                margin-left:540px;
                 margin-top:-60px;
                 border:none;
+    }
+
+    @media (max-width: 768px) {
+        .message{
+                width: 100%;
+        }
+        .body{
+                background-image: url(/src/component/new.PNG);
+                background-position:center;
+                background-size:contain;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin-top:-120px;
+                margin-bottom:-120px;
+                
+        }
+
+        .choose{
+                width:30%; 
+                
+        }
+
+        .upload{
+                margin-top: 10px;
+        }
+        .file {
+                position: absolute;
+                margin-top: 360px;
+                left: 204px;
+                height: 95px;
+                width: 95px;
+        }
+
+        .del{
+               
+                margin-left:240px;
+    }
+
+    }
+
+
+    @media (max-width: 926px) {
+        .body{
+              
+                margin-top:-220px;
+                margin-bottom:-220px;
+                
+        }
+        .file {
+                position: absolute;
+                margin-top: 494px;
+                left: 234px;
+                height: 110px;
+                width: 110px;
+        }
+
+        .del{
+               
+                margin-left:300px;
+    }
+
+    }
+
+    
+    @media (max-width: 1080px) {
+        .message{
+                width: 100%;
+        }
+        .body{
+                background-image: url(/src/component/new.PNG);
+                background-position:center;
+                background-size:contain;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin-top:-120px;
+                margin-bottom:-120px;
+                
+        }
+
+        .choose{
+                width:30%; 
+                
+        }
+
+        .upload{
+                margin-top: 10px;
+        }
+        .file {
+                position: absolute;
+                margin-top: 360px;
+                left: 204px;
+                height: 95px;
+                width: 95px;
+        }
+
+        .del{
+               
+                margin-left:240px;
+    }
+
+    }
+
+
+    @media (max-width: 926px) {
+        .body{
+              
+                margin-top:-100px;
+                margin-bottom:-100px;
+                
+        }
+        .file {
+                position: absolute;
+                margin-top: 494px;
+                left: 234px;
+                height: 110px;
+                width: 110px;
+        }
+
+        .del{
+               
+                margin-left:300px;
+    }   
     }

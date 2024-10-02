@@ -93,7 +93,7 @@ const PopReg = () => {
             </p>
             Upload your preferred image, downlaod and share with your loved ones.
 
-               <div className="body" ref={ToCaptureRef}>
+               <div ref={ToCaptureRef} className="body">
                      <img src={file} className="file"/>
               </div>
               <div className="upload" style={start}>

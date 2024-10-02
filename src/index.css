@@ -4,10 +4,9 @@ body{
 .body{
         background-image: url(/src/component/new.PNG);
         background-position:center;
-        background-size: cover;
         background-repeat: no-repeat;
+        background-size: contain;
         height: 100vh;
-        
 }
 
 .message{
@@ -15,13 +14,12 @@ body{
 }
 
 .file {
-        position: absolute;
-        margin-top: 420px;
-        left: 393px;
-        background-color: white;
+        margin-left:55.5%;
+        margin-top: 63.5%;
+        background-color: red;
         border-radius: 100%;
-        height: 210px;
-        width: 210px;
+        height: 170px;
+        width: 170px;
 }
 
 .upload{
@@ -87,6 +85,43 @@ span{
                 border:none;
     }
 
+
+
+    
+    @media (max-width: 1024px) {
+        .message{
+                width: 100%;
+        }
+        .body{
+            
+                margin-top:10px;
+                margin-bottom:10px;
+                
+        }
+
+        .choose{
+                width:30%; 
+                
+        }
+
+        .upload{
+                margin-top: 10px;
+        }
+        .file {
+                margin-top: 375px;
+                left: 200px;
+                height: 185px;
+                width: 185px;
+        }
+
+        .del{
+               
+                margin-left:550px;
+    }
+    }
+    
+    
+    
     @media (max-width: 768px) {
         .message{
                 width: 100%;
@@ -111,7 +146,6 @@ span{
                 margin-top: 10px;
         }
         .file {
-                position: absolute;
                 margin-top: 360px;
                 left: 204px;
                 height: 95px;
@@ -126,85 +160,6 @@ span{
     }
 
 
-    @media (max-width: 926px) {
-        .body{
-              
-                margin-top:-220px;
-                margin-bottom:-220px;
-                
-        }
-        .file {
-                position: absolute;
-                margin-top: 494px;
-                left: 234px;
-                height: 110px;
-                width: 110px;
-        }
-
-        .del{
-               
-                margin-left:300px;
-    }
-
-    }
-
-    
-    @media (max-width: 1080px) {
-        .message{
-                width: 100%;
-        }
-        .body{
-                background-image: url(/src/component/new.PNG);
-                background-position:center;
-                background-size:contain;
-                background-repeat: no-repeat;
-                height: 100vh;
-                margin-top:-120px;
-                margin-bottom:-120px;
-                
-        }
-
-        .choose{
-                width:30%; 
-                
-        }
-
-        .upload{
-                margin-top: 10px;
-        }
-        .file {
-                position: absolute;
-                margin-top: 360px;
-                left: 204px;
-                height: 95px;
-                width: 95px;
-        }
-
-        .del{
-               
-                margin-left:240px;
-    }
-
-    }
 
 
-    @media (max-width: 926px) {
-        .body{
-              
-                margin-top:-100px;
-                margin-bottom:-100px;
-                
-        }
-        .file {
-                position: absolute;
-                margin-top: 494px;
-                left: 234px;
-                height: 110px;
-                width: 110px;
-        }
-
-        .del{
-               
-                margin-left:300px;
-    }   
-    }
+   
